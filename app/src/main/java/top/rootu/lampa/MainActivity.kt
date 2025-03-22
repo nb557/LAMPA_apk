@@ -2093,7 +2093,7 @@ class MainActivity : BaseActivity(),
                 data = Uri.parse(currentItem.url)
                 setDataAndType(
                     Uri.parse(currentItem.url),
-                    if (currentItem.url.endsWith(".m3u8")) "application/vnd.apple.mpegurl" else "video/*"
+                    "video/*"
                 )
                 flags = 0 // Clear any default flags
             }
